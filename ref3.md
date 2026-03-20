@@ -64,7 +64,7 @@ flowchart LR
     AirflowSched[Airflow Scheduler]
   end
 
-  AirflowDAG -->|Runs Steps| SpringBatchJob[Spring Batch Job(s)]
+  AirflowDAG -->|Runs Steps| SpringBatchJob[Spring Batch Jobs]
   SpringBatchJob -->|Reads/Writes| DB[(Database)]
 
   AirflowWeb -->|Status & Logs| OpsTeam[Ops / Support]
